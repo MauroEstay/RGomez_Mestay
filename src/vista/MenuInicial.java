@@ -28,48 +28,48 @@ public class MenuInicial extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        Programa = new javax.swing.JMenu();
+        MenuSalir = new javax.swing.JMenuItem();
+        Proceso = new javax.swing.JMenu();
+        MenuAgregar = new javax.swing.JMenuItem();
+        MenuEliminar = new javax.swing.JMenuItem();
+        MenuListar = new javax.swing.JMenuItem();
+        MenuConsulta = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Programa");
+        Programa.setText("Programa");
 
-        jMenuItem5.setText("Salir");
-        jMenu1.add(jMenuItem5);
+        MenuSalir.setText("Salir");
+        Programa.add(MenuSalir);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(Programa);
 
-        jMenu2.setText("Proceso");
+        Proceso.setText("Proceso");
 
-        jMenuItem1.setText("Agregar");
-        jMenu2.add(jMenuItem1);
+        MenuAgregar.setText("Agregar");
+        Proceso.add(MenuAgregar);
 
-        jMenuItem2.setText("Eliminar");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        MenuEliminar.setText("Eliminar");
+        MenuEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                MenuEliminarActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        Proceso.add(MenuEliminar);
 
-        jMenuItem3.setText("Listar");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        MenuListar.setText("Listar");
+        MenuListar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                MenuListarActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem3);
+        Proceso.add(MenuListar);
 
-        jMenuItem4.setText("Consulta");
-        jMenu2.add(jMenuItem4);
+        MenuConsulta.setText("Consulta");
+        Proceso.add(MenuConsulta);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(Proceso);
 
         setJMenuBar(jMenuBar1);
 
@@ -87,13 +87,13 @@ public class MenuInicial extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void MenuEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuEliminarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_MenuEliminarActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void MenuListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuListarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_MenuListarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,13 +131,13 @@ public class MenuInicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    public javax.swing.JMenuItem MenuAgregar;
+    public javax.swing.JMenuItem MenuConsulta;
+    public javax.swing.JMenuItem MenuEliminar;
+    public javax.swing.JMenuItem MenuListar;
+    public javax.swing.JMenuItem MenuSalir;
+    public javax.swing.JMenu Proceso;
+    public javax.swing.JMenu Programa;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
     // End of variables declaration//GEN-END:variables
 }
